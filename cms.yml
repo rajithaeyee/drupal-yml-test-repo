@@ -12,7 +12,7 @@ CMS:
         description: The name displayed on the Drupal site.
 
       - name: adminUsername
-        default: "admin"
+        default: ""
         type: string
         description: The username for the Drupal admin account.
 
@@ -27,7 +27,7 @@ CMS:
         description: The email address associated with the Drupal admin account.
 
       - name: modules
-        default: []
+        default: ""
         type: list
         description: A list of modules to install with specific versions.
         items:
