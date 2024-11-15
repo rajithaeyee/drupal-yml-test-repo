@@ -39,7 +39,7 @@ CMS:
             version: "^2.0"
 
       - name: themes
-        default: []
+        default: ""
         type: list
         description: A list of themes to install with specific versions.
         items:
