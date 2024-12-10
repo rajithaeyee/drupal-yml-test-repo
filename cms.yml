@@ -2,53 +2,31 @@ CMS:
   - name: Drupal
     params:
       - name: domain
+        field: Domain
         default: "drupal.example.com"
         type: string
         description: The domain for the Drupal site.
 
       - name: siteName
+        field: Site Name
         default: "Drupal Site"
         type: string
         description: The name displayed on the Drupal site.
 
       - name: adminUsername
+        field: Admin Username
         default: ""
         type: string
         description: The username for the Drupal admin account.
 
       - name: adminPassword
+        field: Admin Password
         default: ""
         type: string
         description: The password for the Drupal admin account.
 
       - name: email
+        field: Email
         default: "admin@example.com"
         type: string
         description: The email address associated with the Drupal admin account.
-
-      - name: modules
-        default: ""
-        type: list
-        description: A list of modules to install with specific versions.
-        items:
-          - name: "drupal/token"
-            version: "^1.15"
-          - name: "drupal/honeypot"
-            version: "^2.1"
-          - name: "drupal/metatag"
-            version: "^2.0"
-
-      - name: themes
-        default: ""
-        type: list
-        description: A list of themes to install with specific versions.
-        items:
-          - name: "drupal/bootstrap"
-            version: "^3.32"
-            
-      - name: scale
-        default: ""
-        type: number
-        min: 1
-        max: 5
-        description: Define scaling options for Drupal instances.
